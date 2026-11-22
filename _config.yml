@@ -8,5 +8,5 @@ baseurl: "/cybersecurity-portfolio"
 markdown: kramdown
 
 header_pages:
-  - project1.md
-  - project2.md
+  - projects/virtual-lab-setup/index.md
+  - projects/nmap-service-scan/index.md
