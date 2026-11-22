@@ -1,3 +1,5 @@
+# Project 2: Nmap Service Scan
+
 ## 1. Project Objective
 
 The objective of this project is to understand network reconnaissance and service enumeration using Nmap in an authorised virtual lab environment.
