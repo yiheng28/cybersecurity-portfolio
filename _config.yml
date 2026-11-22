@@ -6,3 +6,7 @@ url: "https://yiheng28.github.io"
 baseurl: "/cybersecurity-portfolio"
 
 markdown: kramdown
+
+header_pages:
+  - project1.md
+  - project2.md
