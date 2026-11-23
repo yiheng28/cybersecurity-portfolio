@@ -2,6 +2,69 @@
 layout: home
 title: Cybersecurity Portfolio
 ---
+<link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+<!-- HERO SECTION -->
+
+<section class="hero-section">
+
+  <div class="hero-label">
+    CYBERSECURITY PORTFOLIO
+  </div>
+
+  <h1 class="hero-title">
+    Hello, I'm <span class="hero-highlight">Yong Yi Heng.</span>
+  </h1>
+
+  <p class="hero-description">
+    Welcome to my cybersecurity portfolio.
+    I am currently pursuing a Master of Cybersecurity
+    at Universiti Malaya, developing my technical
+    knowledge and practical skills to build a more
+    secure digital world.
+  </p>
+
+  <div class="hero-interests">
+    <span class="interest-tag">Network Security</span>
+    <span class="interest-tag">Penetration Testing</span>
+    <span class="interest-tag">Ethical Hacking</span>
+    <span class="interest-tag">Cloud Security</span>
+    <span class="interest-tag">IoT Security</span>
+  </div>
+
+  <div class="hero-buttons">
+
+    <a href="{{ '/projects/virtual-lab-setup/' | relative_url }}"
+       class="custom-button primary-button">
+      Explore My Projects →
+    </a>
+
+    <a href="https://github.com/yiheng28"
+       target="_blank"
+       rel="noopener noreferrer"
+       class="custom-button secondary-button">
+      GitHub Profile ↗
+    </a>
+
+  </div>
+
+</section>
+
+<!-- THEME SWITCH -->
+
+<button
+  id="theme-toggle"
+  class="theme-toggle"
+  type="button"
+  aria-label="Switch colour theme"
+  title="Switch colour theme">
+  ☾
+</button>
+
+<!-- THEME JAVASCRIPT -->
+
+<script src="{{ '/assets/js/theme-toggle.js' | relative_url }}" defer></script>
+
+<!-- END OF NEW HERO SECTION -->
 
 # Welcome to My Cybersecurity Portfolio
 
@@ -19,7 +82,8 @@ My main interests include Network Security, Penetration Testing, Ethical Hacking
   <img src="assets/images/profile.jpg"
        alt="Profile Photo of Yong Yi Heng"
        width="200"
-       style="border-radius: 50%;">
+       height="200"
+       style="border-radius: 50%; object-fit: cover; object-position: center 20%;">
 </div>
 
 My name is **Yong Yi Heng**, and I am currently pursuing a **Master of Cybersecurity at Universiti Malaya**, which I started in September 2026 and expect to complete in 2028.

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.9.1 -->
+<title>Project 2 | Yong Yi Heng Cybersecurity Portfolio</title>
+<meta name="generator" content="Jekyll v3.10.0" />
+<meta property="og:title" content="Project 2" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="My Cybersecurity Professional Portfolio for WQE7001 Cyber Security" />
+<meta name="twitter:description" property="og:description" content="My Cybersecurity Professional Portfolio for WQE7001 Cyber Security" />
+<link rel="canonical" href="http://localhost:4000/cybersecurity-portfolio/projects/nmap-service-scan/" />
+<meta property="og:url" content="http://localhost:4000/cybersecurity-portfolio/projects/nmap-service-scan/" />
+<meta property="og:site_name" content="Yong Yi Heng Cybersecurity Portfolio" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Project 2" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"My Cybersecurity Professional Portfolio for WQE7001 Cyber Security","headline":"Project 2","url":"http://localhost:4000/cybersecurity-portfolio/projects/nmap-service-scan/"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/cybersecurity-portfolio/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/cybersecurity-portfolio/feed.xml" title="Yong Yi Heng | Cybersecurity Portfolio" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/cybersecurity-portfolio/">Yong Yi Heng | Cybersecurity Portfolio</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/cybersecurity-portfolio/projects/virtual-lab-setup/">Project 1</a><a class="page-link" href="/cybersecurity-portfolio/projects/nmap-service-scan/">Project 2</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Project 2</h1>
+  </header>
+
+  <div class="post-content">
+    <h1 id="project-2-nmap-service-scan">Project 2: Nmap Service Scan</h1>
+
+<h2 id="1-project-objective">1. Project Objective</h2>
+
+<p>The objective of this project is to understand network reconnaissance and service enumeration using Nmap in an authorised virtual lab environment.</p>
+
+<p>This project focuses on identifying open ports, detecting running network services, and examining service versions on a target machine. It also aims to develop practical knowledge of network scanning and the potential security risks associated with exposed services.</p>
+
+<h2 id="2-environment-and-tools">2. Environment and Tools</h2>
+
+<ul>
+  <li><strong>Attacker Machine:</strong> Kali Linux</li>
+  <li><strong>Target Machine:</strong> Metasploitable 2</li>
+  <li><strong>Scanning Tool:</strong> Nmap</li>
+  <li><strong>Virtualisation Platform:</strong> UTM</li>
+  <li><strong>Network Environment:</strong> UTM Shared Network</li>
+</ul>
+
+<h2 id="3-methodology">3. Methodology</h2>
+
+<p>The following steps were performed to conduct the Nmap service scan:</p>
+
+<ol>
+  <li>Started the Kali Linux virtual machine.</li>
+  <li>Started the Metasploitable 2 virtual machine.</li>
+  <li>Identified the target machine’s IP address using the <code class="language-plaintext highlighter-rouge">ifconfig</code> command.</li>
+  <li>Verified network connectivity between Kali Linux and Metasploitable 2 using the <code class="language-plaintext highlighter-rouge">ping</code> command.</li>
+  <li>Checked the installed Nmap version in Kali Linux.</li>
+  <li>Performed a basic network scan using Nmap to identify open ports and associated services.</li>
+  <li>Used Nmap service version detection to identify the software versions of discovered services.</li>
+  <li>Saved the scan results in a text file for further analysis.</li>
+  <li>Examined the scan results to understand the potential security implications of exposed services.</li>
+</ol>
+
+<h2 id="4-results-and-evidence">4. Results and Evidence</h2>
+
+<p>The following screenshots and supporting files demonstrate the Nmap scanning process and its results.</p>
+
+<h3 id="41-nmap-version-verification">4.1 Nmap Version Verification</h3>
+
+<p>The installed Nmap version was checked using the <code class="language-plaintext highlighter-rouge">nmap --version</code> command to confirm that the scanning tool was available in Kali Linux.</p>
+
+<p><img src="evidence/nmap-version.png" alt="Nmap Version" /></p>
+
+<h3 id="42-network-connectivity-verification">4.2 Network Connectivity Verification</h3>
+
+<p>A ping test was performed from Metasploitable 2 to verify communication with the Kali Linux target machine before conducting the scan.</p>
+
+<p><img src="evidence/network-connectivity.png" alt="Network Connectivity" /></p>
+
+<h3 id="43-basic-nmap-scan">4.3 Basic Nmap Scan</h3>
+
+<p>A basic Nmap scan was performed to identify open ports and their associated services on the target machine.</p>
+
+<p><img src="evidence/nmap-basic-scan.png" alt="Basic Nmap Scan" /></p>
+
+<h3 id="44-service-version-detection">4.4 Service Version Detection</h3>
+
+<p>The <code class="language-plaintext highlighter-rouge">-sV</code> option was used to detect the versions of services running on the discovered open ports. This provided additional information about the software operating on the target machine.</p>
+
+<p><img src="evidence/nmap-service-version.png" alt="Nmap Service Version Detection" /></p>
+
+<h3 id="45-saved-nmap-scan-results">4.5 Saved Nmap Scan Results</h3>
+
+<p>The scan results were saved in normal text format using the <code class="language-plaintext highlighter-rouge">-oN</code> option. The output file provides a record of the discovered ports, services, and detected versions for further analysis.</p>
+
+<p><a href="evidence/nmap-service-scan.txt">View Nmap Service Scan Results</a></p>
+
+<h2 id="5-findings-and-analysis">5. Findings and Analysis</h2>
+
+<p>The Nmap scan was used to identify open ports and running network services on the Metasploitable 2 target machine.</p>
+
+<p>The service version detection process provided additional information about the software associated with the discovered open ports.</p>
+
+<p>The following table summarises the findings obtained from the Nmap scan:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Port</th>
+      <th>Service</th>
+      <th>Detected Version</th>
+      <th>Security Implications</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>21/tcp</td>
+      <td>FTP</td>
+      <td>vsftpd 2.3.4</td>
+      <td>ELogin credentials and transferred files may be intercepted because traditional FTP does not encrypt communication by default.</td>
+    </tr>
+    <tr>
+      <td>22/tcp</td>
+      <td>SSH</td>
+      <td>OpenSSH 4.7p1</td>
+      <td>The outdated software version may contain known security vulnerabilities that could be exploited if the system is not properly secured.</td>
+    </tr>
+    <tr>
+      <td>23/tcp</td>
+      <td>Telnet</td>
+      <td>Linux telnetd</td>
+      <td>Login credentials and transmitted data may be captured by attackers because Telnet sends information without encryption by default.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The results demonstrate how Nmap can help identify exposed network services and provide useful information for security assessment. Identifying these services is an important step in understanding the potential attack surface of a system.</p>
+
+<h2 id="6-challenges-and-improvements">6. Challenges and Improvements</h2>
+
+<p>One of the challenges encountered during this project was establishing network connectivity between Kali Linux and Metasploitable 2. The virtual machines initially experienced communication issues because their network configurations needed to be checked and aligned.</p>
+
+<p>This was addressed by configuring both virtual machines to use the UTM Shared Network, allowing them to communicate within the virtual lab environment.</p>
+
+<p>Another challenge was understanding the Nmap scan results, particularly the differences between open ports, service names, and detected software versions.</p>
+
+<p>Possible improvements include:</p>
+
+<ul>
+  <li>Exploring additional Nmap scanning options to obtain more detailed information.</li>
+  <li>Researching detected service versions to identify known vulnerabilities using reliable security references.</li>
+  <li>Organising scan results and evidence more systematically for easier analysis.</li>
+  <li>Comparing scan results from different scanning techniques to understand their differences.</li>
+</ul>
+
+<h2 id="7-security-considerations">7. Security Considerations</h2>
+
+<p>All scanning activities were conducted within an authorised and controlled virtual lab environment using Kali Linux and Metasploitable 2.</p>
+
+<p>Metasploitable 2 is an intentionally vulnerable virtual machine used solely for educational and cybersecurity testing purposes.</p>
+
+<p>The target virtual machine was configured within a private virtual network to avoid exposing its vulnerable services to external networks.</p>
+
+<p>All scanning activities were restricted to the user’s own virtual lab environment.</p>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/cybersecurity-portfolio/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Yong Yi Heng | Cybersecurity Portfolio</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Yong Yi Heng | Cybersecurity Portfolio</li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>My Cybersecurity Professional Portfolio for WQE7001 Cyber Security</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
